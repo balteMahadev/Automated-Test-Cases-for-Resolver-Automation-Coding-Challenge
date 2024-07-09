@@ -1,6 +1,7 @@
 import os
 from selenium.webdriver.common.by import By
 
+
 class HomePage:
 
     def __init__(self, driver):
@@ -15,7 +16,7 @@ class HomePage:
     test2_list_items_loc = (By.XPATH, "//h1[text()='Test 2']/following-sibling::ul/li")
     test3_option_dropdown_loc = (By.XPATH, "//button[@id='dropdownMenuButton']")
     test3_option_dropdown_elements_loc = (By.XPATH, "//div[@aria-labelledby='dropdownMenuButton']/a")
-    test_4_button_loc = (By.XPATH, "//button[text()='Button']")
+    test4_button_loc = (By.XPATH, "//button[text()='Button']")
     test5_button_loc = (By.ID, "test5-button")
     test5_alert_message_loc = (By.ID, "test5-alert")
 
@@ -36,11 +37,11 @@ class HomePage:
 
     @property
     def test4_first_button(self):
-        return self.driver.find_elements(*self.test_4_button_loc)[0]
+        return self.driver.find_elements(*self.test4_button_loc)[0]
 
     @property
     def test4_second_button(self):
-        return self.driver.find_elements(*self.test_4_button_loc)[1]
+        return self.driver.find_elements(*self.test4_button_loc)[1]
 
     @property
     def test3_third_option(self):

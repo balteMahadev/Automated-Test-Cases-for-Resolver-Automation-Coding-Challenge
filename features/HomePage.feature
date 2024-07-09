@@ -1,11 +1,10 @@
-@mb
 Feature: Home Page Functionality
 
   Background:
     Given the user loads Home page
     And the Home page is loaded
 
-  Scenario:  Verify user can fill email and password fields on home page "Test 1"
+  Scenario: Verify user can fill email and password fields on home page "Test 1"
     When the email_input is displayed on Home page
     And the password_input is displayed on Home page
     And the signin_button is displayed on Home page
